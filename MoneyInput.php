@@ -14,10 +14,10 @@
 		</dd><br />
 
 		<dt>
-		  <label for="IventName">イベント名</label>
+		  <label for="EventName">イベント名</label>
 		</dt>
 		<dd>
-		  <input name="IventName" type="text" id="IventName" size="20" maxlength="255" />
+		  <input name="EventName" type="text" id="EventName" size="20" maxlength="255" />
 		</dd><br />
 
 		<dt>
@@ -29,10 +29,10 @@
 		</dd><br />
 
 		<dt>
-		  <label for="price">集計金額</label>
+		  <label for="Price">集計金額</label>
 		</dt>
 		<dd>
-		  <input name="price" type="text" id="price" size="10" maxlength="10" />円
+		  <input name="Price" type="text" id="Price" size="10" maxlength="10" />円
 		</dd>
       </dl><br />
 	  <input type="submit" value="登録する" />
