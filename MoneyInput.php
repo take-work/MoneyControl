@@ -35,7 +35,8 @@
 		  <input name="Price" type="text" id="Price" size="10" maxlength="10" />円
 		</dd>
       </dl><br />
-	  <input type="submit" value="登録する" />
+	  <input type="submit" value="登録する" /><br>
 	</form>
+    <a href="Confirm.php">現在の状況</a>
   </body>
 </html>
