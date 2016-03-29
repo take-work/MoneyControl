@@ -25,8 +25,8 @@
 		</dt>
 		<dd>
 		  西暦<input name="Year" type="text" id="Year" size="8" maxlength="10" />年 &nbsp;
-		  <input name="Month" type="text" id="Month" size="2" maxlength="4" />月 &nbsp;
-		  <input name="Day" type="text" id="Day" size="2" maxlength="4" />日
+		  <input name="Month" type="text" id="Month" size="4" maxlength="4" />月 &nbsp;
+		  <input name="Day" type="text" id="Day" size="4" maxlength="4" />日
 		</dd><br />
 
 		<dt>
