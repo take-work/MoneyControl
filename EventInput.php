@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <title>イベント登録</title>
   </head>
   <body>
     <p>登録するイベント情報を記入してください。</p>

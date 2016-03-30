@@ -1,3 +1,9 @@
+<html>
+<head>
+	<title>登録完了画面</title>
+</head>
+<body>
+
 <?php
 header("Content-Type: text/html; charset=UTF-8");
 $db = mysqli_connect('localhost', 'root', 'i1090149', 'MoneyControl') or die(mysqli_connect_error());
@@ -16,3 +22,6 @@ mysqli_query($db, $sql) or die(mysqli_error($db));
 echo "登録しました。";
 
 ?>
+
+</body>
+</html>

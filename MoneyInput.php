@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <title>金額登録</title>
   </head>
   <body>
     <p>登録する情報を記入してください。</p>
