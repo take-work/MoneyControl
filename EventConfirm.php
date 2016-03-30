@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>EventInput</title>
+	<title>登録完了画面</title>
 </head>
 <body>
 
@@ -10,18 +10,24 @@
 
   mysqli_set_charset($db, 'UTF8');
 
-  $start = "$_POST['startYear']"-"$_POST['startMonth']"-"$_POST['startDay']";
-  $end = "$_POST['endYear']"-"$_POST['endMonth']"-"$_POST['endDay']";
-
-  $post = [$_POST['userName'], $_POST['eventName'], $start, $end, $_POST['price'], $_POST['staff'], $_POST['circle']];
+  $start = $_POST['startYear']."-".$_POST['startMonth']."-".$_POST['startDay'];
+  $end = $_POST['endYear']."-".$_POST['endMonth']."-".$_POST['endDay'];
 
   $sql = sprintf(
-  	'INSERT INTO Events SET event_name="%s", host="%s", start_day=%d, end_day=%d, price=%d, staff=%d, circle=%d',
-  	foreach ($post as $getValue) {
-  	  mysqli_real_escape_string($db, $getValue);
-  	}
+	'INSERT INTO Events SET event_name="%s", host="%s", start_day="%s", end_day="%s", price=%d, staff=%d, circle=%d',
+	mysqli_real_escape_string($db, $_POST['eventName']),
+	mysqli_real_escape_string($db, $_POST['host']),
+	mysqli_real_escape_string($db, $start),
+	mysqli_real_escape_string($db, $end),
+	mysqli_real_escape_string($db, $_POST['price']),
+	mysqli_real_escape_string($db, $_POST['staff']),
+	mysqli_real_escape_string($db, $_POST['circle'])			
   );
   echo "登録しました。";
+
+echo $start;
+
+mysqli_query($db, $sql) or die(mysqli_error($db));
 
 ?>
 

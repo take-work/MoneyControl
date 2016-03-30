@@ -62,6 +62,5 @@
 
 	  <input type="submit" value="登録する" /><br>
 	</form>
-    <a href="Confirm.php">現在の状況</a>
   </body>
 </html>
