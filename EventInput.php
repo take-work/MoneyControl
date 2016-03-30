@@ -21,12 +21,21 @@
 		</dd><br />
 
 		<dt>
-		  <label for="Date">開催日</label>
+		  <label for="Date">開始日</label>
 		</dt>
 		<dd>
-		  西暦<input name="Year" type="text" id="Year" size="8" maxlength="10" />年 &nbsp;
-		  <input name="Month" type="text" id="Month" size="4" maxlength="4" />月 &nbsp;
-		  <input name="Day" type="text" id="Day" size="4" maxlength="4" />日
+		  西暦<input name="startYear" type="text" id="startYear" size="8" maxlength="10" />年 &nbsp;
+		  <input name="startMonth" type="text" id="startMonth" size="4" maxlength="4" />月 &nbsp;
+		  <input name="startDay" type="text" id="startDay" size="4" maxlength="4" />日
+		</dd><br />
+
+		<dt>
+		  <label for="Date">終了日</label>
+		</dt>
+		<dd>
+		  西暦<input name="endYear" type="text" id="endYear" size="8" maxlength="10" />年 &nbsp;
+		  <input name="endMonth" type="text" id="endMonth" size="4" maxlength="4" />月 &nbsp;
+		  <input name="endDay" type="text" id="endDay" size="4" maxlength="4" />日
 		</dd><br />
 
 		<dt>
