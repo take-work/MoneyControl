@@ -39,6 +39,7 @@
       </dl><br />
 	  <input type="submit" value="登録する" /><br>
 	</form>
+
     <a href="Confirm.php">現在の金額状況</a><br>
     <a href="EventInput.php">イベントの新規登録</a><br>
     <a href="EventList.php">登録されているイベント</a>

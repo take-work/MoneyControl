@@ -29,5 +29,10 @@ mysqli_query($db, $sql) or die(mysqli_error($db));
 
 ?>
 
+<a href="Confirm.php">現在の金額状況</a><br>
+<a href="EventInput.php">イベントの新規登録</a><br>
+<a href="MoneyInput.php">金額情報の入力</a><br>
+<a href="EventList.php">登録されているイベント</a>
+
 </body>
 </html>
