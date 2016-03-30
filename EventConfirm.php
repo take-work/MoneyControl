@@ -25,8 +25,6 @@
   );
   echo "登録しました。";
 
-echo $start;
-
 mysqli_query($db, $sql) or die(mysqli_error($db));
 
 ?>
