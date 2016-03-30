@@ -7,21 +7,21 @@
     <form id="formInput" name="formInput" method="post" action="TotalMoney.php">
 	  <dl>
 		<dt>
-		  <label for="EventName">イベント名</label>
+		  <label for="eventName">イベント名</label>
 		</dt>
 		<dd>
-		  <input name="EventName" type="text" id="EventName" size="20" maxlength="255" />
+		  <input name="eventName" type="text" id="eventName" size="20" maxlength="255" />
 		</dd><br />
 
 		<dt>
-		  <label for="Host">主催者</label>
+		  <label for="host">主催者</label>
 		</dt>
 		<dd>
-		  <input name="Host" type="text" id="Host" size="20" maxlength="255" />
+		  <input name="host" type="text" id="host" size="20" maxlength="255" />
 		</dd><br />
 
 		<dt>
-		  <label for="Date">開始日</label>
+		  <label for="date">開始日</label>
 		</dt>
 		<dd>
 		  西暦<input name="startYear" type="text" id="startYear" size="8" maxlength="10" />年 &nbsp;
@@ -39,24 +39,24 @@
 		</dd><br />
 
 		<dt>
-		  <label for="Price">準備費用</label>
+		  <label for="price">準備費用</label>
 		</dt>
 		<dd>
-		  <input name="Price" type="text" id="Price" size="10" maxlength="10" />円
+		  <input name="price" type="text" id="price" size="10" maxlength="10" />円
 		</dd><br />
 
 		<dt>
-		  <label for="Staff">スタッフ数</label>
+		  <label for="staff">スタッフ数</label>
 		</dt>
 		<dd>
-		  <input name="Staff" type="text" id="Staff" size="5" maxlength="10" />人
+		  <input name="staff" type="text" id="staff" size="5" maxlength="10" />人
 		</dd><br />
 
 		<dt>
-		  <label for="Circle">参加サークル数</label>
+		  <label for="circle">参加サークル数</label>
 		</dt>
 		<dd>
-		  <input name="Circle" type="text" id="Circle" size="5" maxlength="10" />
+		  <input name="circle" type="text" id="circle" size="5" maxlength="10" />
 		</dd>
       </dl><br />
 
