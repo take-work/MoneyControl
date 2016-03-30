@@ -4,7 +4,7 @@
   </head>
   <body>
     <p>登録するイベント情報を記入してください。</p>
-    <form id="formInput" name="formInput" method="post" action="TotalMoney.php">
+    <form id="formInput" name="formInput" method="post" action="EventConfirm.php">
 	  <dl>
 		<dt>
 		  <label for="eventName">イベント名</label>
