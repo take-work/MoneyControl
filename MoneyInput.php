@@ -30,14 +30,14 @@ $recordSet = mysqli_query($db, 'SELECT * FROM Events');
 		<?php
 		  while ($data = mysqli_fetch_assoc($recordSet)) { ?>
 		    <dd>
-		      <OPTION value=<?php $data['event_name'] ?> name="EventName" id="EventName"><?php echo $data['event_name'] ?></OPTION>
+		      <OPTION value=<?php echo $data['event_name'] ?> name=<?php echo $data['event_name'] ?>><?php echo $data['event_name'] ?></OPTION>
 		    </dd>
 		<?php } ?>
 		  </SELECT>
         <br /><br />
 
 		<dt>
-		  <label for="Date">日付</label>
+		  <label for="Date">入力日</label>
 		</dt>
 		<dd>
 		  西暦<input name="Year" type="text" id="Year" size="8" maxlength="10" />年 &nbsp;
