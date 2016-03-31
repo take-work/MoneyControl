@@ -5,7 +5,7 @@
   </head>
   <body>
     <p>登録するイベント情報を記入してください。</p>
-    <form id="formInput" name="formInput" method="post" action="EventConfirm.php">
+    <form id="formInput" name="formInput" method="post" action="Complete/EventComplete.php">
 	  <dl>
 		<dt>
 		  <label for="eventName">イベント名</label>
@@ -64,8 +64,8 @@
 	  <input type="submit" value="登録する" /><br>
 	</form>
 
-    <a href="Confirm.php">現在の金額状況</a><br>
     <a href="MoneyInput.php">金額情報の入力</a><br>
-    <a href="EventList.php">登録されているイベント</a>
+    <a href="Lists/TotalMoney.php">現在の金額状況</a><br>
+    <a href="Lists/EventList.php">登録されているイベント</a>
   </body>
 </html>
