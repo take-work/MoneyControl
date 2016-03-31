@@ -1,3 +1,12 @@
+<?php
+header("Content-Type: text/html; charset=UTF-8");
+$db = mysqli_connect('localhost', 'root', 'i1090149', 'MoneyControl') or die(mysqli_connect_error());
+
+mysqli_set_charset($db, 'UTF8');
+
+$recordSet = mysqli_query($db, 'SELECT * FROM Events');
+?>
+
 <html>
   <head>
     <meta charset="UTF-8">
@@ -17,9 +26,15 @@
 		<dt>
 		  <label for="EventName">イベント名</label>
 		</dt>
-		<dd>
-		  <input name="EventName" type="text" id="EventName" size="20" maxlength="255" />
-		</dd><br />
+		  <SELECT name="EventName">イベント名
+		<?php
+		  while ($data = mysqli_fetch_assoc($recordSet)) { ?>
+		    <dd>
+		      <OPTION value=<?php $data['event_name'] ?> name="EventName" id="EventName"><?php echo $data['event_name'] ?></OPTION>
+		    </dd>
+		<?php } ?>
+		  </SELECT>
+        <br /><br />
 
 		<dt>
 		  <label for="Date">日付</label>
