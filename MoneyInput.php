@@ -14,7 +14,7 @@ $recordSet = mysqli_query($db, 'SELECT * FROM Events');
   </head>
   <body>
     <p>登録する情報を記入してください。</p>
-    <form id="formInput" name="formInput" method="post" action="TotalMoney.php">
+    <form id="formInput" name="formInput" method="post" action="Complete/MoneyComplete.php">
 	  <dl>
 		<dt>
 		  <label for="UserName">氏名</label>
