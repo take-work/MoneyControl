@@ -1,10 +1,14 @@
 <?php
-header("Content-Type: text/html; charset=UTF-8");
-$db = mysqli_connect('localhost', 'root', 'i1090149', 'MoneyControl') or die(mysqli_connect_error());
+  header("Content-Type: text/html; charset=UTF-8");
 
-mysqli_set_charset($db, 'UTF8');
+  require_once(dirname(__FILE__).'/database.php');
 
-$recordSet = mysqli_query($db, 'SELECT * FROM Events');
+  $MyDB = new MyDB;
+  $db = $MyDB->dbConnect();
+
+  mysqli_set_charset($db, 'UTF8');
+
+  $recordSet = mysqli_query($db, 'SELECT * FROM Events');
 ?>
 
 <html>

@@ -4,34 +4,38 @@
 </head>
 <body>
 
-<?php
-header("Content-Type: text/html; charset=UTF-8");
-$db = mysqli_connect('localhost', 'root', 'i1090149', 'MoneyControl') or die(mysqli_connect_error());
+  <?php
+    header("Content-Type: text/html; charset=UTF-8");
 
-mysqli_set_charset($db, 'UTF8');
+    require_once(dirname(__FILE__).'../../database.php');
 
-$recordSet = mysqli_query($db, 'SELECT * FROM Calculation');
-while ($data = mysqli_fetch_assoc($recordSet)) {
-  $Count++;
-  echo $data['Price'];
-  echo '<br />';
+    $MyDB = new MyDB;
+    $db = $MyDB->dbConnect();
 
-  if ($Count == 1) {
-  	$TotalMoney = $data['Price'];
-  } else {
-  	$TotalMoney += $data['Price'];
-  }
-}
+    mysqli_set_charset($db, 'UTF8');
 
-echo "<br>";
-echo "合計金額:" . $TotalMoney;
+    $recordSet = mysqli_query($db, 'SELECT * FROM Calculation');
+    while ($data = mysqli_fetch_assoc($recordSet)) {
+      $Count++;
+      echo $data['Price'];
+      echo '<br />';
 
-?>
-<br>
+      if ($Count == 1) {
+  	    $TotalMoney = $data['Price'];
+      } else {
+  	    $TotalMoney += $data['Price'];
+      }
+    }
 
-<a href="../EventInput.php">イベントの新規登録</a><br>
-<a href="../MoneyInput.php">金額情報の入力</a><br>
-<a href="../Lists/EventList.php">登録されているイベント</a>
+    echo "<br>";
+    echo "合計金額:" . $TotalMoney;
 
-</body>
+  ?>
+
+  <br>
+  <a href="../EventInput.php">イベントの新規登録</a><br>
+  <a href="../MoneyInput.php">金額情報の入力</a><br>
+  <a href="../Lists/EventList.php">登録されているイベント</a>
+
+<body>
 </html>
