@@ -3,7 +3,7 @@
 	<title>イベント一覧</title>
 </head>
 <body>
-  <font size="4">イベント一覧</font><br><br><br>
+  <font size="4">イベント一覧</font><br><br>
 
   <?php
     header("Content-Type: text/html; charset=UTF-8");
