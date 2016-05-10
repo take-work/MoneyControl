@@ -27,8 +27,7 @@
         <th>準備費用</th>
         <th>スタッフ数</th>
         <th>サークル数</th>
-        <th>データ更新</th>
-        <th>データ削除</th>
+        <th>データの編集</th>
         <th>金額情報管理</th>
       </tr>
   <?php
@@ -42,8 +41,7 @@
         <td align="center"><?=htmlspecialchars($data['price'])?></td>
         <td align="center"><?=htmlspecialchars($data['staff'])?></td>
         <td align="center"><?=htmlspecialchars($data['circle'])?></td>
-        <td align="center">未作成</td>
-        <td align="center">未作成</td>
+        <td align="center"><a href="dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a></td>
         <td align="center">未作成</td>
       </tr>
   <?php
