@@ -42,7 +42,7 @@
         <td align="center"><input name="price" type="text" id="price" value="<?=htmlspecialchars($data['price'])?>" size="10" maxlength="10" /></td>
         <td align="center"><input name="staff" type="text" id="staff" value="<?=htmlspecialchars($data['staff'])?>" size="5" maxlength="10" /></td>
         <td align="center"><input name="circle" type="text" id="circle" value="<?=htmlspecialchars($data['circle'])?>" size="5" maxlength="10" /></td>
-        <td align="center"><a href="dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">データを変更する</a></td>
+        <td align="center"><a href="../Complete/EventUpdateComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">データを変更する</a></td>
       </tr>
   <?php
     }
