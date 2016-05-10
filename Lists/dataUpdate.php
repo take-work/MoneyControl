@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>イベントデータの更新/title>
+	<title>イベントデータの更新</title>
 </head>
 <body>
 <?php
