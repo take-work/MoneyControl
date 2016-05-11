@@ -34,16 +34,18 @@
   <?php
     while ($data = mysqli_fetch_assoc($data)) {
   ?>
-      <tr>
-        <td><input name="eventName" type="text" id="eventName" value="<?=htmlspecialchars($data['event_name'])?>"/></td>
-        <td><input name="host" type="text" id="host" value="<?=htmlspecialchars($data['host'])?>"/></td>
-        <td align="center"><input name="start" type="text" id="startMonth" value="<?=htmlspecialchars($data['start_day'])?>"/></td>
-        <td align="center"><input name="endMonth" type="text" id="endMonth" value="<?=htmlspecialchars($data['end_day'])?>"/></td>
-        <td align="center"><input name="price" type="text" id="price" value="<?=htmlspecialchars($data['price'])?>"/></td>
-        <td align="center"><input name="staff" type="text" id="staff" value="<?=htmlspecialchars($data['staff'])?>" size="5"/></td>
-        <td align="center"><input name="circle" type="text" id="circle" value="<?=htmlspecialchars($data['circle'])?>" size="5"/></td>
-        <td align="center"><a href="../Complete/EventUpdateComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">データを変更する</a></td>
-      </tr>
+      <form id="formInput" name="formInput" method="post" action="Complete/EventComplete.php">
+        <tr>
+          <td><input name="eventName" type="text" id="eventName" value="<?=htmlspecialchars($data['event_name'])?>"/></td>
+          <td><input name="host" type="text" id="host" value="<?=htmlspecialchars($data['host'])?>"/></td>
+          <td align="center"><input name="start" type="text" id="startDay" value="<?=htmlspecialchars($data['start_day'])?>"/></td>
+          <td align="center"><input name="endMonth" type="text" id="endDay" value="<?=htmlspecialchars($data['end_day'])?>"/></td>
+          <td align="center"><input name="price" type="text" id="price" value="<?=htmlspecialchars($data['price'])?>"/></td>
+          <td align="center"><input name="staff" type="text" id="staff" value="<?=htmlspecialchars($data['staff'])?>" size="5"/></td>
+          <td align="center"><input name="circle" type="text" id="circle" value="<?=htmlspecialchars($data['circle'])?>" size="5"/></td>
+          <td align="center"><a href="../Complete/EventUpdateComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">データを変更する</a></td>
+        </tr>
+      </form>
   <?php
     }
   ?>
