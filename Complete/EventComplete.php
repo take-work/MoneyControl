@@ -19,17 +19,18 @@
 
     $sql = sprintf(
       'INSERT INTO Events SET event_name="%s", host="%s", start_day="%s", end_day="%s", price=%d, staff=%d, circle=%d',
-	  mysqli_real_escape_string($db, $_POST['eventName']),
-	  mysqli_real_escape_string($db, $_POST['host']),
-	  mysqli_real_escape_string($db, $start),
-	  mysqli_real_escape_string($db, $end),
-	  mysqli_real_escape_string($db, $_POST['price']),
-	  mysqli_real_escape_string($db, $_POST['staff']),
-	  mysqli_real_escape_string($db, $_POST['circle'])			
+        mysqli_real_escape_string($db, $_POST['eventName']),
+	      mysqli_real_escape_string($db, $_POST['host']),
+	      mysqli_real_escape_string($db, $start),
+	      mysqli_real_escape_string($db, $end),
+	      mysqli_real_escape_string($db, $_POST['price']),
+	      mysqli_real_escape_string($db, $_POST['staff']),
+	      mysqli_real_escape_string($db, $_POST['circle'])
     );
-    echo "登録しました。";
 
     mysqli_query($db, $sql) or die(mysqli_error($db));
+
+    echo "登録しました。";
   ?>
 
   <a href="../EventInput.php">イベントの新規登録</a><br>
