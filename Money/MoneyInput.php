@@ -1,7 +1,7 @@
 <?php
   header("Content-Type: text/html; charset=UTF-8");
 
-  require_once(dirname(__FILE__).'../database.php');
+  require_once(dirname(__FILE__).'../../database.php');
 
   $MyDB = new MyDB;
   $db = $MyDB->dbConnect();
@@ -60,7 +60,7 @@
 	</form>
 
     <a href="../Event/EventInput.php">イベントの新規登録</a><br>
-    <a href="../Event/EventList.php">登録されているイベント</a>
-    <a href="TotalMoney.php">現在の金額状況</a><br>
+    <a href="../Event/EventList.php">登録されているイベント</a><br>
+    <a href="TotalMoney.php">現在の金額状況</a>
   </body>
 </html>
