@@ -30,6 +30,7 @@
         <th>データの編集</th>
         <th>金額情報管理</th>
         <th>サークルの管理</th>
+        <th>データの削除</th>
       </tr>
   <?php
     while ($data = mysqli_fetch_assoc($recordSet)) {
@@ -45,6 +46,7 @@
         <td align="center"><a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a></td>
         <td align="center">未作成</td>
         <td align="center">未作成</td>
+        <td align="center"><a href="Delete/deleteConfirm.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="削除"></a></td>
       </tr>
   <?php
     }
