@@ -18,10 +18,10 @@
 
     $sql = sprintf(
 	    'INSERT INTO Calculation SET UserName="%s", EventName="%s", InputDay="%s", Price=%d',
-	    mysqli_real_escape_string($db, $_POST['UserName']),
-	    mysqli_real_escape_string($db, $_POST['EventName']),
-	    mysqli_real_escape_string($db, $inputDay),
-	    mysqli_real_escape_string($db, $_POST['Price'])
+	      mysqli_real_escape_string($db, $_POST['UserName']),
+	      mysqli_real_escape_string($db, $_POST['EventName']),
+	      mysqli_real_escape_string($db, $inputDay),
+	      mysqli_real_escape_string($db, $_POST['Price'])
     );
 
     mysqli_query($db, $sql) or die(mysqli_error($db));
