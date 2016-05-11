@@ -17,7 +17,7 @@
     $recordSet = mysqli_query($db, 'SELECT * FROM Events');
   ?>
 
-  <table width="1000" border="1" cellspacing="1" cellpadding="8">
+  <table width="1200" border="1" cellspacing="1" cellpadding="8">
     <tbody>
       <tr>
         <th>イベント名</th>
@@ -29,6 +29,7 @@
         <th>サークル数</th>
         <th>データの編集</th>
         <th>金額情報管理</th>
+        <th>サークルの管理</th>
       </tr>
   <?php
     while ($data = mysqli_fetch_assoc($recordSet)) {
@@ -42,6 +43,7 @@
         <td align="center"><?=htmlspecialchars($data['staff'])?></td>
         <td align="center"><?=htmlspecialchars($data['circle'])?></td>
         <td align="center"><a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a></td>
+        <td align="center">未作成</td>
         <td align="center">未作成</td>
       </tr>
   <?php

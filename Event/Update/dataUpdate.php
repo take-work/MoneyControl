@@ -16,7 +16,7 @@
 
     $id = $_GET['id'];
 
-    $data = mysqli_query($db, 'SELECT * FROM Events Where id =' . $id); 
+    $data = mysqli_query($db, 'SELECT * FROM Events Where id =' . $id);
   ?>
 
   <table width="1200" border="1" cellspacing="1" cellpadding="8">
