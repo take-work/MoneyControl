@@ -54,7 +54,7 @@
 
   <br>
   <a href="../EventInput.php">イベントの新規登録</a><br>
-  <a href="../EventList.php">イベントの新規登録</a><br>
+  <a href="../EventList.php">現在のイベント一覧</a><br>
   <a href="../../Money/TotalMoney.php">現在の金額状況</a><br>
   <a href="../../Money/MoneyInput.php">金額情報の入力</a>
 
