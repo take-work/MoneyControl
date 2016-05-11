@@ -43,7 +43,7 @@
           <td align="center"><input name="price" type="text" id="price" value="<?=htmlspecialchars($data['price'])?>"/></td>
           <td align="center"><input name="staff" type="text" id="staff" value="<?=htmlspecialchars($data['staff'])?>" size="5"/></td>
           <td align="center"><input name="circle" type="text" id="circle" value="<?=htmlspecialchars($data['circle'])?>" size="5"/></td>
-          <td align="center"><a href="../Complete/EventUpdateComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">データを変更する</a></td>
+          <td align="center"><a href="UpdateComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">データを変更する</a></td>
         </tr>
       </form>
   <?php
@@ -53,10 +53,10 @@
   </table>
 
   <br>
-  <a href="../EventInput.php">イベントの新規登録</a>
-  <a href="../EventList.php">イベントの新規登録</a>
+  <a href="../EventInput.php">イベントの新規登録</a><br>
+  <a href="../EventList.php">イベントの新規登録</a><br>
   <a href="../../Money/TotalMoney.php">現在の金額状況</a><br>
-  <a href="../../Money/MoneyInput.php">金額情報の入力</a><br>
+  <a href="../../Money/MoneyInput.php">金額情報の入力</a>
 
 </body>
 </html>
