@@ -29,7 +29,6 @@
         <th>サークル数</th>
         <th>データの編集</th>
         <th>金額情報管理</th>
-        <th>サークルの管理</th>
         <th>データの削除</th>
       </tr>
   <?php
@@ -41,10 +40,27 @@
         <td align="center"><?=htmlspecialchars($data['start_day'])?></td>
         <td align="center"><?=htmlspecialchars($data['end_day'])?></td>
         <td align="center"><?=htmlspecialchars($data['price'])?></td>
-        <td align="center"><?=htmlspecialchars($data['staff'])?></td>
-        <td align="center"><?=htmlspecialchars($data['circle'])?></td>
+        <?php
+          if ($data['staff'] == 0) {
+        ?>
+            <td align="center"><?=htmlspecialchars($data['staff'])?></td>
+        <?php
+          } else {
+        ?>
+            <td align="center"><a href="Staff/staffConfirm.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['staff'])?></a></td>
+        <?php
+          }
+          if ($data['circle'] == 0) {
+        ?>
+            <td align="center"><?=htmlspecialchars($data['circle'])?></td>
+        <?php
+          } else {
+        ?>
+            <td align="center"><a href="Circle/circleConfirm.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['circle'])?></a></td>
+        <?php
+          }
+        ?>
         <td align="center"><a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a></td>
-        <td align="center">未作成</td>
         <td align="center">未作成</td>
         <td align="center"><a href="Delete/deleteConfirm.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="削除"></a></td>
       </tr>
@@ -53,6 +69,7 @@
   ?>
     </tbody>
   </table>
+  <p>* 参加スタッフ・参加サークルの管理は、「スタッフ数」「サークル数」の数字から確認・編集できます。0 の場合は編集できません。</p>
 
   <br>
   <a href="../Money/TotalMoney.php">現在の金額状況</a><br>
