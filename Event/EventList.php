@@ -7,7 +7,7 @@
 
   <?php
     header("Content-Type: text/html; charset=UTF-8");
-    require_once(dirname(__FILE__).'../../database.php');
+    require_once(dirname(__FILE__).'../database.php');
 
     $MyDB = new MyDB;
     $db = $MyDB->dbConnect();
@@ -41,7 +41,7 @@
         <td align="center"><?=htmlspecialchars($data['price'])?></td>
         <td align="center"><?=htmlspecialchars($data['staff'])?></td>
         <td align="center"><?=htmlspecialchars($data['circle'])?></td>
-        <td align="center"><a href="dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a></td>
+        <td align="center"><a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a></td>
         <td align="center">未作成</td>
       </tr>
   <?php
@@ -51,9 +51,9 @@
   </table>
 
   <br>
-  <a href="TotalMoney.php">現在の金額状況</a><br>
-  <a href="../MoneyInput.php">金額情報の入力</a><br>
-  <a href="../EventInput.php">イベントの新規登録</a>
+  <a href="../Money/TotalMoney.php">現在の金額状況</a><br>
+  <a href="../Money/MoneyInput.php">金額情報の入力</a><br>
+  <a href="EventInput.php">イベントの新規登録</a>
 
 </body>
 </html>
