@@ -3,11 +3,11 @@
 	<title>イベントデータの更新</title>
 </head>
 <body>
-  <font size="4">イベント一覧</font><br><br>
+  <font size="4">イベント編集</font><br><br>
 
   <?php
     header("Content-Type: text/html; charset=UTF-8");
-    require_once(dirname(__FILE__).'../../database.php');
+    require_once(dirname(__FILE__).'../../../database.php');
 
     $MyDB = new MyDB;
     $db = $MyDB->dbConnect();
