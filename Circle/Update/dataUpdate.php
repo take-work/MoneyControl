@@ -32,11 +32,22 @@
   ?>
       <form name="formInput" method="post" action="updateComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">
         <tr>
-          <td><input name="circleName" type="text" value="<?=htmlspecialchars($data['circle_name'])?>"/></td>
-          <td><input name="host" type="text" value="<?=htmlspecialchars($data['host'])?>"/></td>
-          <td align="center"><input name="proceeds" type="text" value="<?=htmlspecialchars($data['proceeds'])?>"/></td>
+          <td>
+            <input name="circleName" type="text" value="<?=htmlspecialchars($data['circle_name'])?>"/>
+          </td>
+
+          <td>
+            <input name="host" type="text" value="<?=htmlspecialchars($data['host'])?>"/>
+          </td>
+
+          <td align="center">
+            <input name="proceeds" type="text" value="<?=htmlspecialchars($data['proceeds'])?>"/>
+          </td>
+
           <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>">
-          <td align="center"><input type="submit" value="データを変更する"></td>
+          <td align="center">
+            <input type="submit" value="データを変更する">
+          </td>
         </tr>
       </form>
   <?php

@@ -34,11 +34,25 @@
     while ($data = mysqli_fetch_assoc($recordSet)) {
   ?>
       <tr>
-        <td align="center"><?=htmlspecialchars($data['circle_name'])?></td>
-        <td><?=htmlspecialchars($data['host'])?></td>
-        <td align="center"><?=htmlspecialchars($data['proceeds'])?></td>
-        <td align="center"><a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a></td>
-        <td align="center"><a href="Delete/deleteComfirm.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="削除"></a></td>
+        <td align="center">
+          <?=htmlspecialchars($data['circle_name'])?>
+        </td>
+
+        <td>
+          <?=htmlspecialchars($data['host'])?>
+        </td>
+
+        <td align="center">
+          <?=htmlspecialchars($data['proceeds'])?>
+        </td>
+
+        <td align="center">
+          <a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a>
+        </td>
+
+        <td align="center">
+          <a href="Delete/deleteComfirm.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="削除"></a>
+        </td>
       </tr>
   <?php
     }
