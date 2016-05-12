@@ -17,6 +17,7 @@
     $recordSet = mysqli_query($db, 'SELECT * FROM Events');
   ?>
 
+  <a href="EventInput.php"><input type="submit" value="新しいイベントを作成する"></a><br><br>
   <table width="1200" border="1" cellspacing="1" cellpadding="8">
     <tbody>
       <tr>
@@ -40,10 +41,8 @@
         <td align="center"><?=htmlspecialchars($data['start_day'])?></td>
         <td align="center"><?=htmlspecialchars($data['end_day'])?></td>
         <td align="center"><?=htmlspecialchars($data['price'])?></td>
-        <td align="center"><?=htmlspecialchars($data['staff'])?></td>
         <td align="center"><a href="Staff/staffConfirm.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['staff'])?></a></td>
-        <td align="center"><?=htmlspecialchars($data['circle'])?></td>
-        <td align="center"><a href="Circle/circleConfirm.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['circle'])?></a></td>
+        <td align="center"><a href="Circle/circleList.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['circle'])?></a></td>
         <td align="center"><a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a></td>
         <td align="center">未作成</td>
         <td align="center"><a href="Delete/deleteConfirm.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="削除"></a></td>
@@ -53,12 +52,11 @@
   ?>
     </tbody>
   </table>
-  <p>* 参加スタッフ・参加サークルの管理は、「スタッフ数」「サークル数」の数字から確認・編集できます。0 の場合は編集できません。</p>
+  <p>* 参加スタッフ・参加サークルの管理は、「スタッフ数」「サークル数」の数字から確認・編集できます。</p>
 
   <br>
   <a href="../Money/TotalMoney.php">現在の金額状況</a><br>
   <a href="../Money/MoneyInput.php">金額情報の入力</a><br>
-  <a href="EventInput.php">イベントの新規登録</a>
 
 </body>
 </html>
