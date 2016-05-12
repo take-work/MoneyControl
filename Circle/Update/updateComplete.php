@@ -28,8 +28,8 @@
   ?>
 
   <br><br>
-  <a href="../circleList.php">サークル一覧に戻る</a>
-  <a href="../../Event/EventList.php">登録されているイベント</a><br>
+  <a href="../circleList.php">サークル一覧に戻る</a><br>
+  <a href="../../Event/EventList.php">登録されているイベント</a>
 
 </body>
 </html>
