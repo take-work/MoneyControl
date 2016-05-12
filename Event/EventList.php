@@ -28,8 +28,8 @@
         <th>準備費用</th>
         <th>スタッフ数</th>
         <th>サークル数</th>
-        <th>データの編集</th>
         <th>金額情報管理</th>
+        <th>データの編集</th>
         <th>データの削除</th>
       </tr>
   <?php
@@ -67,11 +67,11 @@
         </td>
 
         <td align="center">
-          <a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a>
+          未作成
         </td>
 
         <td align="center">
-          未作成
+          <a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="編集ページ"></a>
         </td>
 
         <td align="center">
