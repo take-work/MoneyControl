@@ -27,9 +27,9 @@
     echo "更新しました。";
   ?>
 
-  <br>
+  <br><br>
+  <a href="../circleList.php">サークル一覧に戻る</a>
   <a href="../../Event/EventList.php">登録されているイベント</a><br>
-  <a href="../Create/EventInput.php">イベントの新規登録</a>
 
 </body>
 </html>

@@ -46,7 +46,8 @@
   </table>
 
   <br>
-  <a href="../EventList.php">イベント一覧に戻る</a>
+  <a href="../circleList.php">サークル一覧に戻る</a><br>
+  <a href="../../Event/EventList.php">イベント一覧に戻る</a>
 
 </body>
 </html>
