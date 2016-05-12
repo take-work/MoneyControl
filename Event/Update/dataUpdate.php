@@ -28,7 +28,6 @@
         <th>終了年月日</th>
         <th>準備費用</th>
         <th>スタッフ数</th>
-        <th>サークル数</th>
         <th>データの変更</th>
       </tr>
   <?php
@@ -58,10 +57,6 @@
 
           <td align="center">
             <input name="staff" type="text" value="<?=htmlspecialchars($data['staff'])?>" size="5"/>
-          </td>
-
-          <td align="center">
-            <input name="circle" type="text" value="<?=htmlspecialchars($data['circle'])?>" size="5"/>
           </td>
 
           <td align="center">

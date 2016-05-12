@@ -53,12 +53,6 @@
 		  <input name="staff" type="text" id="staff" size="5" maxlength="10" />人
 		</dd><br />
 
-		<dt>
-		  <label for="circle">参加サークル数</label>
-		</dt>
-		<dd>
-		  <input name="circle" type="text" id="circle" size="5" maxlength="10" />
-		</dd>
       </dl><br />
 
 	  <input type="submit" value="登録する" /><br>

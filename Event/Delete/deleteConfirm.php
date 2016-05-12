@@ -17,6 +17,8 @@
     $id = $_GET['id'];
 
     $data = mysqli_query($db, 'SELECT * FROM Events Where id =' . $id);
+    $circleGet = mysqli_query($db, 'SELECT * FROM Circles Where event_id = '.$id);
+    $circleNumber = $circleGet->num_rows;
   ?>
 
   <table width="1200" border="1" cellspacing="1" cellpadding="8">
@@ -33,18 +35,44 @@
       </tr>
   <?php
     while ($data = mysqli_fetch_assoc($data)) {
+
   ?>
       <form name="formInput" method="post" action="deleteComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">
         <tr>
-          <td><?=htmlspecialchars($data['event_name'])?></td>
-          <td><?=htmlspecialchars($data['host'])?></td>
-          <td align="center"><?=htmlspecialchars($data['start_day'])?></td>
-          <td align="center"><?=htmlspecialchars($data['end_day'])?></td>
-          <td align="center"><?=htmlspecialchars($data['price'])?></td>
-          <td align="center"><?=htmlspecialchars($data['staff'])?></td>
-          <td align="center"><?=htmlspecialchars($data['circle'])?></td>
-          <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>">
-          <td align="center"><a href="deleteComplete.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="削除する"></a></td>
+          <td>
+            <?=htmlspecialchars($data['event_name'])?>
+          </td>
+
+          <td>
+            <?=htmlspecialchars($data['host'])?>
+          </td>
+
+          <td align="center">
+            <?=htmlspecialchars($data['start_day'])?>
+          </td>
+
+          <td align="center">
+            <?=htmlspecialchars($data['end_day'])?>
+          </td>
+
+          <td align="center">
+            <?=htmlspecialchars($data['price'])?>
+          </td>
+
+          <td align="center">
+            <?=htmlspecialchars($data['staff'])?>
+          </td>
+
+          <td align="center">
+            <?php echo $circleNumber; ?>
+          </td>
+
+          <td align="center">
+            <a href="deleteComplete.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>">
+              <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>">
+              <input type="submit" value="削除する">
+            </a>
+          </td>
         </tr>
       </form>
   <?php

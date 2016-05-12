@@ -15,14 +15,13 @@
     mysqli_set_charset($db, 'UTF8');
 
     $sql = sprintf(
-      'UPDATE Events SET event_name="%s", host="%s", start_day="%s", end_day="%s", price=%d, staff=%d, circle=%d WHERE id = %d',
+      'UPDATE Events SET event_name="%s", host="%s", start_day="%s", end_day="%s", price=%d, staff=%d WHERE id = %d',
         mysqli_real_escape_string($db, $_POST['eventName']),
         mysqli_real_escape_string($db, $_POST['host']),
         mysqli_real_escape_string($db, $_POST['startDay']),
         mysqli_real_escape_string($db, $_POST['endDay']),
         mysqli_real_escape_string($db, $_POST['price']),
         mysqli_real_escape_string($db, $_POST['staff']),
-        mysqli_real_escape_string($db, $_POST['circle']),
         mysqli_real_escape_string($db, $_POST['id'])
     );
 
