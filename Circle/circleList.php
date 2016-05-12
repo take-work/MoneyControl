@@ -61,7 +61,7 @@
   </table>
 
   <br>
-  <a href="../EventList.php">イベント一覧に戻る</a>
+  <a href="../Event/EventList.php">イベント一覧に戻る</a>
 
 </body>
 </html>
