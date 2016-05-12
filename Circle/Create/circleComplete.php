@@ -22,17 +22,25 @@
 	      mysqli_real_escape_string($db, $_POST['proceeds'])
     );
 
+    $circleCount = sprintf(
+      'SELECT COUNT * FROM Circles WHERE event_id = '. $_POST['id']
+    );
+
+    $override = sprintf(
+      'UPDATE Events SET circle=%d WHERE id ='. $_POST['id'],
+      mysqli_real_escape_string($db, $circleCount)
+    );
+
     mysqli_query($db, $sql) or die(mysqli_error($db));
+    mysqli_query($db, $override) or die(mysqli_error($db));
 
     echo "登録しました。";
   ?>
 
   <br>
   <br>
-  <a href="../EventInput.php">イベントの新規登録</a><br>
-  <a href="../../EventList.php">登録されているイベント</a><br>
-  <a href="../../Money/MoneyInput.php">金額情報の入力</a><br>
-  <a href="../../Money/TotalMoney.php">現在の金額状況</a>
+  <a href="../../Event/EventInput.php">イベントの新規登録</a><br>
+  <a href="../../Event/EventList.php">登録されているイベント</a>
 
 </body>
 </html>
