@@ -5,7 +5,7 @@
   </head>
   <body>
     <p>登録するサークル情報を記入してください。</p>
-    <form id="formInput" name="formInput" method="post" action="Complete/circleComplete.php">
+    <form id="formInput" name="formInput" method="post" action="circleComplete.php">
       <dl>
         <dt>
 		  <label for="circleName">サークル名</label>
@@ -33,7 +33,7 @@
 	  <input type="submit" value="登録する" /><br>
 	</form>
 
-    <a href="EventList.php">登録されているイベント</a><br>
-    <a href="../Money/TotalMoney.php">現在の金額状況</a>
+    <a href="../circleList">サークル一覧に戻る</a><br>
+    <a href="../Event/EventList.php">イベント一覧に戻る</a>
   </body>
 </html>
