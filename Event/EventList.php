@@ -18,7 +18,7 @@
   ?>
 
   <a href="Create/EventInput.php"><input type="submit" value="新しいイベントを作成する"></a><br><br>
-  <table width="1200" border="1" cellspacing="1" cellpadding="8">
+  <table width="1300" border="1" cellspacing="1" cellpadding="8">
     <tbody>
       <tr>
         <th>イベント名</th>
@@ -28,7 +28,8 @@
         <th>準備費用</th>
         <th>スタッフ数</th>
         <th>サークル数</th>
-        <th>サークル合計売上</th>
+        <th>合計売上</th>
+        <th>純利益</th>
         <th>データの編集</th>
         <th>データの削除</th>
       </tr>
@@ -64,6 +65,10 @@
 
         <td align="center">
           <a href="../Circle/circleList.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?php echo $circleNumber; ?></a>
+        </td>
+
+        <td align="center">
+          未作成
         </td>
 
         <td align="center">
