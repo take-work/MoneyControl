@@ -17,7 +17,7 @@
     $recordSet = mysqli_query($db, 'SELECT * FROM Events');
   ?>
 
-  <a href="EventInput.php"><input type="submit" value="新しいイベントを作成する"></a><br><br>
+  <a href="Create/EventInput.php"><input type="submit" value="新しいイベントを作成する"></a><br><br>
   <table width="1200" border="1" cellspacing="1" cellpadding="8">
     <tbody>
       <tr>
