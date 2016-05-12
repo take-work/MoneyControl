@@ -54,9 +54,5 @@
   </table>
   <p>* 参加スタッフ・参加サークルの管理は、「スタッフ数」「サークル数」の数字から確認・編集できます。</p>
 
-  <br>
-  <a href="../Money/TotalMoney.php">現在の金額状況</a><br>
-  <a href="../Money/MoneyInput.php">金額情報の入力</a><br>
-
 </body>
 </html>
