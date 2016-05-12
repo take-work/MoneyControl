@@ -5,13 +5,13 @@
   </head>
   <body>
     <p>登録するサークル情報を記入してください。</p>
-    <form id="formInput" name="formInput" method="post" action="Complete/CircleComplete.php">
+    <form id="formInput" name="formInput" method="post" action="Complete/circleComplete.php">
       <dl>
         <dt>
 		  <label for="circleName">サークル名</label>
 		</dt>
 		<dd>
-		  <input name="ciecleName" type="text" id="ciecleName" maxlength="255" />
+		  <input name="circleName" type="text" id="circleName" maxlength="255" />
 		</dd><br />
 
 		<dt>
@@ -22,13 +22,14 @@
 		</dd><br />
 
 		<dt>
-		  <label for="proceeds">売上金(目標)</label>
+		  <label for="proceeds">売上金(目標or最終)</label>
 		</dt>
 		<dd>
 		  <input name="proceeds" type="text" id="proceeds" maxlength="10" />円
 		</dd>
       </dl><br />
 
+      <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>"></input>
 	  <input type="submit" value="登録する" /><br>
 	</form>
 
