@@ -5,7 +5,7 @@
 <body>
   <font size="4">サークル一覧</font><br><br>
 
-  <form id="createCircle" name="createCircle" method="post" action="circleInput.php?actin=create&id=<?=htmlspecialchars($_GET['id'])?>">
+  <form id="createCircle" name="createCircle" method="post" action="Create/circleInput.php?actin=create&id=<?=htmlspecialchars($_GET['id'])?>">
     <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>"></input>
     <input type="submit" name="createCircle" value="新しいサークルを作成する">
   </form>
@@ -18,7 +18,7 @@
 
     mysqli_set_charset($db, 'UTF8');
 
-    $recordSet = mysqli_query($db, 'SELECT * FROM Circles');
+    $recordSet = mysqli_query($db, 'SELECT * FROM Circles WHERE event_id = '. $_GET['id']);
   ?>
 
   <table width="1200" border="1" cellspacing="1" cellpadding="8">
