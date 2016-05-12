@@ -36,15 +36,38 @@
   ?>
       <form name="formInput" method="post" action="UpdateComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">
         <tr>
-          <td><input name="eventName" type="text" value="<?=htmlspecialchars($data['event_name'])?>"/></td>
-          <td><input name="host" type="text" value="<?=htmlspecialchars($data['host'])?>"/></td>
-          <td align="center"><input name="startDay" type="text" value="<?=htmlspecialchars($data['start_day'])?>"/></td>
-          <td align="center"><input name="endDay" type="text" value="<?=htmlspecialchars($data['end_day'])?>"/></td>
-          <td align="center"><input name="price" type="text" value="<?=htmlspecialchars($data['price'])?>"/></td>
-          <td align="center"><input name="staff" type="text" value="<?=htmlspecialchars($data['staff'])?>" size="5"/></td>
-          <td align="center"><input name="circle" type="text" value="<?=htmlspecialchars($data['circle'])?>" size="5"/></td>
-          <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>">
-          <td align="center"><input type="submit" value="データを変更する"></td>
+          <td>
+            <input name="eventName" type="text" value="<?=htmlspecialchars($data['event_name'])?>"/>
+          </td>
+
+          <td>
+            <input name="host" type="text" value="<?=htmlspecialchars($data['host'])?>"/>
+          </td>
+
+          <td align="center">
+            <input name="startDay" type="text" value="<?=htmlspecialchars($data['start_day'])?>"/>
+          </td>
+
+          <td align="center">
+            <input name="endDay" type="text" value="<?=htmlspecialchars($data['end_day'])?>"/>
+          </td>
+
+          <td align="center">
+            <input name="price" type="text" value="<?=htmlspecialchars($data['price'])?>"/>
+          </td>
+
+          <td align="center">
+            <input name="staff" type="text" value="<?=htmlspecialchars($data['staff'])?>" size="5"/>
+          </td>
+
+          <td align="center">
+            <input name="circle" type="text" value="<?=htmlspecialchars($data['circle'])?>" size="5"/>
+          </td>
+
+          <td align="center">
+            <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>">
+            <input type="submit" value="データを変更する">
+          </td>
         </tr>
       </form>
   <?php

@@ -36,16 +36,45 @@
     while ($data = mysqli_fetch_assoc($recordSet)) {
   ?>
       <tr>
-        <td><?=htmlspecialchars($data['event_name'])?></td>
-        <td><?=htmlspecialchars($data['host'])?></td>
-        <td align="center"><?=htmlspecialchars($data['start_day'])?></td>
-        <td align="center"><?=htmlspecialchars($data['end_day'])?></td>
-        <td align="center"><?=htmlspecialchars($data['price'])?></td>
-        <td align="center"><a href="Staff/staffConfirm.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['staff'])?></a></td>
-        <td align="center"><a href="../Circle/circleList.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['circle'])?></a></td>
-        <td align="center"><a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a></td>
-        <td align="center">未作成</td>
-        <td align="center"><a href="Delete/deleteConfirm.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="削除"></a></td>
+        <td>
+          <?=htmlspecialchars($data['event_name'])?>
+        </td>
+
+        <td>
+          <?=htmlspecialchars($data['host'])?>
+        </td>
+
+        <td align="center">
+          <?=htmlspecialchars($data['start_day'])?>
+        </td>
+
+        <td align="center">
+          <?=htmlspecialchars($data['end_day'])?>
+        </td>
+
+        <td align="center">
+          <?=htmlspecialchars($data['price'])?>
+        </td>
+
+        <td align="center">
+          <a href="Staff/staffConfirm.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['staff'])?></a>
+        </td>
+
+        <td align="center">
+          <a href="../Circle/circleList.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['circle'])?></a>
+        </td>
+
+        <td align="center">
+          <a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">編集ページ</a>
+        </td>
+
+        <td align="center">
+          未作成
+        </td>
+
+        <td align="center">
+          <a href="Delete/deleteConfirm.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="削除"></a>
+        </td>
       </tr>
   <?php
     }
