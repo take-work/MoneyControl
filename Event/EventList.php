@@ -77,11 +77,11 @@
         </td>
 
         <td align="center">
-          <a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="編集ページ"></a>
+          <a href="Update/dataUpdate.php?actin=update&id=<?=htmlspecialchars($data['id'])?>" target="_blank"><input type="submit" value="編集ページ"></a>
         </td>
 
         <td align="center">
-          <a href="Delete/deleteConfirm.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>"><input type="submit" value="削除"></a>
+          <a href="Delete/deleteConfirm.php?actin=delete&id=<?=htmlspecialchars($data['id'])?>" target="_blank"><input type="submit" value="削除"></a>
         </td>
       </tr>
   <?php
