@@ -56,7 +56,7 @@
         </td>
 
         <td align="center">
-          <?=htmlspecialchars($data['price'])?>
+          \<?=htmlspecialchars($data['price'])?>
         </td>
 
         <td align="center">
