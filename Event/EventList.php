@@ -56,7 +56,7 @@
         </td>
 
         <td align="center">
-          <a href="Staff/staffConfirm.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['staff'])?></a>
+          <a href="../Staff/staffList.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['staff'])?></a>
         </td>
 
         <td align="center">
