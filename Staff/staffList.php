@@ -59,11 +59,29 @@
         </td>
 
         <td align="center">
-          <?=htmlspecialchars($data['experience'])?>
+          <?php
+            if ($data['experience'] == 1) {
+              echo "経験有";
+            } else {
+              echo "経験無";
+            }
+          ?>
         </td>
 
         <td align="center">
-          <?=htmlspecialchars($data['rank'])?>
+          <?php
+            switch ($data['rank']) {
+              case '1':
+                echo "主催";
+                break;
+              case '2':
+                echo "副主催";
+                break;
+              case '3':
+                echo "その他";
+                break;
+            }
+          ?>
         </td>
 
         <td align="center">
