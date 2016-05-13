@@ -22,9 +22,13 @@
   <table width="1200" border="1" cellspacing="1" cellpadding="8">
     <tbody>
       <tr>
+        <th>ナンバー</th>
+        <th>スペース</th>
         <th>サークル名</th>
         <th>代表者</th>
-        <th>売上</th>
+        <th>参加人数</th>
+        <th>机の数</th>
+        <th>椅子の数</th>
         <th>データの編集</th>
       </tr>
   <?php
@@ -33,6 +37,14 @@
       <form name="formInput" method="post" action="updateComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">
         <tr>
           <td>
+            <input name="number" type="text" value="<?=htmlspecialchars($data['number'])?>"/>
+          </td>
+
+          <td>
+            <input name="space" type="text" value="<?=htmlspecialchars($data['space'])?>"/>
+          </td>
+
+          <td>
             <input name="circleName" type="text" value="<?=htmlspecialchars($data['circle_name'])?>"/>
           </td>
 
@@ -40,12 +52,20 @@
             <input name="host" type="text" value="<?=htmlspecialchars($data['host'])?>"/>
           </td>
 
-          <td align="center">
-            <input name="proceeds" type="text" value="<?=htmlspecialchars($data['proceeds'])?>"/>
+          <td>
+            <input name="staff" type="text" value="<?=htmlspecialchars($data['staff'])?>"/>
           </td>
 
-          <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>">
+          <td>
+            <input name="desk" type="text" value="<?=htmlspecialchars($data['desk'])?>"/>
+          </td>
+
+          <td>
+            <input name="chaise" type="text" value="<?=htmlspecialchars($data['chaise'])?>"/>
+          </td>
+
           <td align="center">
+            <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>">
             <input type="submit" value="データを変更する">
           </td>
         </tr>
