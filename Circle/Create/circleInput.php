@@ -9,14 +9,26 @@
     <table width="800" border="1" cellspacing="1" cellpadding="8">
       <tbody>
         <tr>
+          <th>ナンバー</th>
+          <th>スペース</th>
           <th>サークル名</th>
           <th>代表者</th>
-          <th>売上</th>
+          <th>参加人数</th>
+          <th>机の数</th>
+          <th>椅子の数</th>
           <th>データの登録</th>
         </tr>
 
         <form id="formInput" name="formInput" method="post" action="circleComplete.php">
           <tr>
+       	    <td align="center">
+		      <input name="number" type="text" id="number" maxlength="255" />
+		    </td>
+
+   	   	    <td align="center">
+		      <input name="space" type="text" id="space" maxlength="255" />
+		    </td>
+
 	   	    <td align="center">
 		      <input name="circleName" type="text" id="circleName" maxlength="255" />
 		    </td>
@@ -26,8 +38,17 @@
 		    </td>
 
 		    <td align="center">
-		      <input name="proceeds" type="text" id="proceeds" maxlength="10" />円
+		      <input name="staff" type="text" id="staff" maxlength="255" />
 		    </td>
+
+	   	    <td align="center">
+		      <input name="desk" type="text" id="desk" maxlength="255" />
+		    </td>
+
+   	   	    <td align="center">
+		      <input name="chaise" type="text" id="chaise" maxlength="255" />
+		    </td>
+
 
             <td align="center">
               <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>"></input>

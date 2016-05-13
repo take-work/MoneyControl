@@ -15,31 +15,28 @@
     mysqli_set_charset($db, 'UTF8');
 
     $sql = sprintf(
-      'INSERT INTO Circles SET event_id=%d, circle_name="%s", host="%s", proceeds="%s"',
+      'INSERT INTO Circles SET event_id=%d, number=%d, space="%s", circle_name="%s", host="%s", staff=%d, desk=%d, chaise=%d',
         mysqli_real_escape_string($db, $_POST['id']),
+        mysqli_real_escape_string($db, $_POST['number']),
+        mysqli_real_escape_string($db, $_POST['space']),
 	      mysqli_real_escape_string($db, $_POST['circleName']),
 	      mysqli_real_escape_string($db, $_POST['host']),
-	      mysqli_real_escape_string($db, $_POST['proceeds'])
+        mysqli_real_escape_string($db, $_POST['staff']),
+        mysqli_real_escape_string($db, $_POST['desk']),
+        mysqli_real_escape_string($db, $_POST['chaise'])
     );
 
     $circleCount = sprintf(
       'SELECT COUNT * FROM Circles WHERE event_id = '. $_POST['id']
     );
 
-    $override = sprintf(
-      'UPDATE Events SET circle=%d WHERE id ='. $_POST['id'],
-      mysqli_real_escape_string($db, $circleCount)
-    );
-
     mysqli_query($db, $sql) or die(mysqli_error($db));
-    mysqli_query($db, $override) or die(mysqli_error($db));
 
     echo "登録しました。";
   ?>
 
   <br>
   <br>
-  <a href="../../Event/EventInput.php">イベントの新規登録</a><br>
   <a href="../../Event/EventList.php">登録されているイベント</a>
 
 </body>
