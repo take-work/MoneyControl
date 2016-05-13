@@ -25,7 +25,7 @@
   ?>
 
   <br><br>
-  <a href="../../Event/EventList.php">登録されているイベント</a>
+  <a href="../../Event/EventList.php">現在のイベント一覧</a>
 
 </body>
 </html>
