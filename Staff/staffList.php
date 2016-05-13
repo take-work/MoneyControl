@@ -29,7 +29,7 @@
         <th>メールアドレス</th>
         <th>電話番号</th>
         <th>Twitter</th>
-        <th>経験者</th>
+        <th>経験</th>
         <th>役職</th>
         <th>データの編集</th>
         <th>データの削除</th>
