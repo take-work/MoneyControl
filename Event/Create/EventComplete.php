@@ -14,8 +14,8 @@
 
     mysqli_set_charset($db, 'UTF8');
 
-    $start = $_POST['startYear']."-".$_POST['startMonth']."-".$_POST['startDay'];
-    $end = $_POST['endYear']."-".$_POST['endMonth']."-".$_POST['endDay'];
+    $start = $_POST['startYear']."/".$_POST['startMonth']."/".$_POST['startDay'];
+    $end = $_POST['endYear']."/".$_POST['endMonth']."/".$_POST['endDay'];
 
     $sql = sprintf(
       'INSERT INTO Events SET event_name="%s", host="%s", start_day="%s", end_day="%s", price=%d, staff=%d',
