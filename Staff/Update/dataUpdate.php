@@ -80,6 +80,7 @@
   </table>
 
   <br>
+  <a href="#" onClick="window.close(); return false;">スタッフ一覧に戻る</a><br>
   <a href="../../Event/EventList.php">イベント一覧に戻る</a>
 
 </body>

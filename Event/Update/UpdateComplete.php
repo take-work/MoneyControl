@@ -30,7 +30,7 @@
   ?>
 
   <br><br>
-  <a href="../EventList.php">登録されているイベント</a><br>
+  <a href="#" onClick="window.close(); return false;">イベント一覧に戻る</a><br>
 
 </body>
 </html>

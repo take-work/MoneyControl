@@ -34,6 +34,7 @@
 
     <br>
     <br>
-    <a href="../../Event/EventList.php">登録されているイベント</a>
+    <a href="../StaffList.php?actin=confirm&id=<?=htmlspecialchars($_POST['id'])?>">スタッフ一覧に戻る</a>
+    <a href="../../Event/EventList.php">イベント一覧に戻る</a>
   </body>
 </html>

@@ -67,8 +67,7 @@
   </table>
 
   <br>
-  <a href="../EventList.php">現在のイベント一覧</a><br>
-  <a href="../Create/EventInput.php">イベントの新規登録</a><br>
+  <a href="#" onClick="window.close(); return false;">イベント一覧に戻る</a>
 
 </body>
 </html>
