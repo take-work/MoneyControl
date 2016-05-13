@@ -21,13 +21,13 @@
   <table width="1300" border="1" cellspacing="1" cellpadding="8">
     <tbody>
       <tr>
-        <th>イベント名</th>
-        <th>主催者</th>
         <th>開始日</th>
         <th>終了日</th>
-        <th>準備費用</th>
+        <th>イベント名</th>
+        <th>主催者</th>
         <th>スタッフ数</th>
         <th>サークル数</th>
+        <th>準備費用</th>
         <th>合計売上</th>
         <th>純利益</th>
         <th>データの編集</th>
@@ -39,6 +39,14 @@
       $circleNumber = $circleGet->num_rows;
   ?>
       <tr>
+        <td align="center">
+          <?=htmlspecialchars($data['start_day'])?>
+        </td>
+
+        <td align="center">
+          <?=htmlspecialchars($data['end_day'])?>
+        </td>
+
         <td>
           <?=htmlspecialchars($data['event_name'])?>
         </td>
@@ -48,24 +56,17 @@
         </td>
 
         <td align="center">
-          <?=htmlspecialchars($data['start_day'])?>
-        </td>
-
-        <td align="center">
-          <?=htmlspecialchars($data['end_day'])?>
-        </td>
-
-        <td align="center">
-          \<?=htmlspecialchars($data['price'])?>
-        </td>
-
-        <td align="center">
           <a href="Staff/staffConfirm.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['staff'])?></a>
         </td>
 
         <td align="center">
           <a href="../Circle/circleList.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?php echo $circleNumber; ?></a>
         </td>
+
+        <td align="center">
+          \<?=htmlspecialchars($data['price'])?>
+        </td>
+
 
         <td align="center">
           未作成

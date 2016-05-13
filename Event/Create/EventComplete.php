@@ -18,13 +18,12 @@
     $end = $_POST['endYear']."/".$_POST['endMonth']."/".$_POST['endDay'];
 
     $sql = sprintf(
-      'INSERT INTO Events SET event_name="%s", host="%s", start_day="%s", end_day="%s", price=%d, staff=%d',
+      'INSERT INTO Events SET event_name="%s", host="%s", start_day="%s", end_day="%s", price=%d',
         mysqli_real_escape_string($db, $_POST['eventName']),
 	      mysqli_real_escape_string($db, $_POST['host']),
 	      mysqli_real_escape_string($db, $start),
 	      mysqli_real_escape_string($db, $end),
-	      mysqli_real_escape_string($db, $_POST['price']),
-	      mysqli_real_escape_string($db, $_POST['staff'])
+	      mysqli_real_escape_string($db, $_POST['price'])
     );
 
     mysqli_query($db, $sql) or die(mysqli_error($db));

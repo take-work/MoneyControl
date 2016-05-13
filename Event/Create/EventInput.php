@@ -9,25 +9,16 @@
     <table width="1200" border="1" cellspacing="1" cellpadding="8">
       <tbody>
         <tr>
-          <th>イベント名</th>
-          <th>主催者</th>
           <th>開始年月日</th>
           <th>終了年月日</th>
+          <th>イベント名</th>
+          <th>主催者</th>
           <th>準備費用</th>
-          <th>スタッフ数</th>
           <th>データの登録</th>
         </tr>
 
         <form id="formInput" name="formInput" method="post" action="EventComplete.php">
 	      <tr>
-		    <td align="center">
-		      <input name="eventName" type="text" id="eventName" size="20" maxlength="255" />
-		    </td>
-
- 		    <td align="center">
-		      <input name="host" type="text" id="host" size="20" maxlength="255" />
-		    </td>
-
 		    <td align="center">
 		      西暦<input name="startYear" type="text" id="startYear" size="8" maxlength="10" />年 &nbsp;
 		      <input name="startMonth" type="text" id="startMonth" size="4" maxlength="4" />月 &nbsp;
@@ -41,11 +32,15 @@
 		    </td>
 
 		    <td align="center">
-		      <input name="price" type="text" id="price" size="10" maxlength="10" />円
+		      <input name="eventName" type="text" id="eventName" size="20" maxlength="255" />
+		    </td>
+
+ 		    <td align="center">
+		      <input name="host" type="text" id="host" size="20" maxlength="255" />
 		    </td>
 
 		    <td align="center">
-		      <input name="staff" type="text" id="staff" size="5" maxlength="10" />人
+		      <input name="price" type="text" id="price" size="10" maxlength="10" />円
 		    </td>
 
             <td align="center">
