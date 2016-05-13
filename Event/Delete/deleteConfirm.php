@@ -3,7 +3,7 @@
 	<title>イベントデータの削除</title>
 </head>
 <body>
-  <font size="4">下記のデータを削除します。よろしければ、「データの削除」から「削除する」ボタンをクリックしてください。</font><br><br>
+  <font size="4">下記のデータを削除します。<br>よろしければ、「データの削除」から「削除する」ボタンをクリックしてください。</font><br><br>
 
   <?php
     header("Content-Type: text/html; charset=UTF-8");
@@ -82,7 +82,7 @@
   </table>
 
   <br>
-  <a href="../EventList.php">現在のイベント一覧</a>
+  <a href="#" onClick="window.close(); return false;">イベント一覧に戻る</a>
 
 </body>
 </html>
