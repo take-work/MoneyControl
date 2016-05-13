@@ -35,8 +35,12 @@
       </tr>
   <?php
     while ($data = mysqli_fetch_assoc($recordSet)) {
+
       $circleGet = mysqli_query($db, 'SELECT * FROM Circles Where event_id = '.$data['id']);
       $circleNumber = $circleGet->num_rows;
+
+      $staffGet = mysqli_query($db, 'SELECT * FROM Staffs Where event_id = '.$data['id']);
+      $staffNumber = $staffGet->num_rows;
   ?>
       <tr>
         <td align="center">
@@ -56,7 +60,7 @@
         </td>
 
         <td align="center">
-          <a href="../Staff/staffList.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?=htmlspecialchars($data['staff'])?></a>
+          <a href="../Staff/staffList.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>"><?php echo $staffNumber; ?></a>
         </td>
 
         <td align="center">
