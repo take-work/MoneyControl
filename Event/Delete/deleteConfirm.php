@@ -83,7 +83,6 @@
 
   <br>
   <a href="../EventList.php">現在のイベント一覧</a><br>
-  <a href="../Create/EventInput.php">イベントの新規登録</a><br>
 
 </body>
 </html>
