@@ -18,7 +18,7 @@
 
     mysqli_set_charset($db, 'UTF8');
 
-    $recordSet = mysqli_query($db, 'SELECT * FROM Staffs WHERE event_id = '. $_GET['id']);
+    $recordSet = mysqli_query($db, 'SELECT * FROM Staffs WHERE event_id = "'. $_GET['id'] .'"ORDER BY rank');
   ?>
 
   <table width="1200" border="1" cellspacing="1" cellpadding="8">
