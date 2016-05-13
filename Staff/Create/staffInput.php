@@ -42,14 +42,14 @@
 		        </td>
 
     	   	  <td align="center">
-		          <input name="experience" type="radio" id="experience" value="1" />経験有<br>
-              <input name="experience" type="radio" id="experience" value="2" />経験無
+		          <input name="experience" type="radio" id="experience1" value="1" /><label for="experience1">経験有</label><br>
+              <input name="experience" type="radio" id="experience2" value="2" /><label for="experience2">経験無</label>
 		        </td>
 
        	    <td align="center">
-		          <input name="rank" type="radio" id="rank" value="1" />主催<br>
-              <input name="rank" type="radio" id="rank" value="2" />副主催<br>
-              <input name="rank" type="radio" id="rank" value="3" />その他
+		          <input name="rank" type="radio" id="rank1" value="1" /><label for="rank1">主催</label><br>
+              <input name="rank" type="radio" id="rank2" value="2" /><label for="rank2">副主催</label><br>
+              <input name="rank" type="radio" id="rank3" value="3" /><label for="rank3">その他</label>
 		        </td>
 
             <td align="center">

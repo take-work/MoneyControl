@@ -57,14 +57,14 @@
           </td>
 
           <td>
-            <input name="experience" type="radio" value="1" <?php if ($data['experience'] == 1) { ?> checked="checked" <?php } ?> />経験有<br>
-            <input name="experience" type="radio" value="2" <?php if ($data['experience'] == 2) { ?> checked="checked" <?php } ?> />経験無<br>
+            <input name="experience" type="radio" id="experience1" value="1" <?php if ($data['experience'] == 1) { ?> checked="checked" <?php } ?> /><label for="experience1">経験有</label><br>
+            <input name="experience" type="radio" id="experience2" value="2" <?php if ($data['experience'] == 2) { ?> checked="checked" <?php } ?> /><label for="experience2">経験無</label><br>
           </td>
 
           <td>
-            <input name="rank" type="radio" value="1" <?php if ($data['rank'] == 1) { ?> checked="checked" <?php } ?>/>主催<br>
-            <input name="rank" type="radio" value="2" <?php if ($data['rank'] == 2) { ?> checked="checked" <?php } ?>/>副主催<br>
-            <input name="rank" type="radio" value="3" <?php if ($data['rank'] == 3) { ?> checked="checked" <?php } ?>/>その他
+            <input name="rank" type="radio" id="rank1" value="1" <?php if ($data['rank'] == 1) { ?> checked="checked" <?php } ?>/><label for="rank1">主催</label><br>
+            <input name="rank" type="radio" id="rank2" value="2" <?php if ($data['rank'] == 2) { ?> checked="checked" <?php } ?>/><label for="rank2">副主催</label><br>
+            <input name="rank" type="radio" id="rank3" value="3" <?php if ($data['rank'] == 3) { ?> checked="checked" <?php } ?>/><label for="rank3">その他</label>
           </td>
 
           <td align="center">
