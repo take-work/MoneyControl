@@ -19,10 +19,10 @@
           <th>データの登録</th>
         </tr>
 
-        <form id="formInput" name="formInput" method="post" action="circleComplete.php">
+        <form id="formInput" name="formInput" method="post" action="staffComplete.php">
           <tr>
        	    <td align="center">
-		          <input name="name" type="text" id="name" maxlength="255" />
+		          <input name="staffName" type="text" id="staffName" maxlength="255" />
 		        </td>
 
    	   	    <td align="center">
@@ -42,8 +42,8 @@
 		        </td>
 
     	   	  <td align="center">
-		          <input name="experience" type="radio" id="experience" value="true" />経験有<br>
-              <input name="experience" type="radio" id="experience" value="false" />経験無
+		          <input name="experience" type="radio" id="experience" value="1" />経験有<br>
+              <input name="experience" type="radio" id="experience" value="2" />経験無
 		        </td>
 
        	    <td align="center">
