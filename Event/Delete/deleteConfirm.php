@@ -82,7 +82,7 @@
   </table>
 
   <br>
-  <a href="../EventList.php">現在のイベント一覧</a><br>
+  <a href="../EventList.php">現在のイベント一覧</a>
 
 </body>
 </html>
