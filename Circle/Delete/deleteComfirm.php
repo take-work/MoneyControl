@@ -3,7 +3,7 @@
 	<title>サークルデータの削除</title>
 </head>
 <body>
-  <font size="4">下記のデータを削除します。よろしいですか？</font><br><br>
+  <font size="4">下記のデータを削除します。よろしければ、「データの削除」から「削除する」ボタンをクリックしてください。</font><br><br>
 
   <?php
     header("Content-Type: text/html; charset=UTF-8");
