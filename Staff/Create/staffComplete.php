@@ -30,8 +30,8 @@
       echo "登録しました。";
     ?>
 
-  <br>
-  <br>
-  <a href="../../Event/EventList.php">登録されているイベント</a>
-</body>
+    <br>
+    <br>
+    <a href="../../Event/EventList.php">登録されているイベント</a>
+  </body>
 </html>

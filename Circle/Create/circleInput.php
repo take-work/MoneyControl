@@ -22,43 +22,41 @@
         <form id="formInput" name="formInput" method="post" action="circleComplete.php">
           <tr>
        	    <td align="center">
-		      <input name="number" type="text" id="number" maxlength="255" />
-		    </td>
+  		        <input name="number" type="text" id="number" maxlength="255" />
+		        </td>
 
    	   	    <td align="center">
-		      <input name="space" type="text" id="space" maxlength="255" />
-		    </td>
+		          <input name="space" type="text" id="space" maxlength="255" />
+		        </td>
 
-	   	    <td align="center">
-		      <input name="circleName" type="text" id="circleName" maxlength="255" />
-		    </td>
+  	   	    <td align="center">
+	    	      <input name="circleName" type="text" id="circleName" maxlength="255" />
+		        </td>
 
-		    <td align="center">
-		      <input name="host" type="text" id="host" maxlength="255" />
-		    </td>
+    		    <td align="center">
+		          <input name="host" type="text" id="host" maxlength="255" />
+		        </td>
 
-		    <td align="center">
-		      <input name="staff" type="text" id="staff" maxlength="255" />
-		    </td>
+		        <td align="center">
+		          <input name="staff" type="text" id="staff" maxlength="255" />
+		        </td>
 
-	   	    <td align="center">
-		      <input name="desk" type="text" id="desk" maxlength="255" />
-		    </td>
+   	        <td align="center">
+		          <input name="desk" type="text" id="desk" maxlength="255" />
+		        </td>
 
-   	   	    <td align="center">
-		      <input name="chaise" type="text" id="chaise" maxlength="255" />
-		    </td>
-
+       	    <td align="center">
+		          <input name="chaise" type="text" id="chaise" maxlength="255" />
+		        </td>
 
             <td align="center">
               <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>"></input>
-  	          <input type="submit" value="登録する" />
-  	        </td>
-  	      </tr>
-	    </form>
-
-	  </tbody>
-	</table>
+              <input type="submit" value="登録する" />
+            </td>
+ 	        </tr>
+	      </form>
+	    </tbody>
+	  </table>
 
     <br>
     <a href="../circleList?actin=confirm&id=<?=htmlspecialchars($_GET['id'])?>">サークル一覧に戻る</a><br>
