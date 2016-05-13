@@ -31,7 +31,6 @@
 
   <br><br>
   <a href="../EventList.php">登録されているイベント</a><br>
-  <a href="../Create/EventInput.php">イベントの新規登録</a>
 
 </body>
 </html>

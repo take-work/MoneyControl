@@ -1,9 +1,9 @@
 <html>
 <head>
-	<title>サークル一覧</title>
+	<title>サークル情報の編集</title>
 </head>
 <body>
-  <font size="4">サークル一覧</font><br><br>
+  <font size="4">サークル編集</font><br><br>
 
   <?php
     header("Content-Type: text/html; charset=UTF-8");
