@@ -64,7 +64,7 @@
           <td>
             <input name="rank" type="radio" id="rank1" value="1" <?php if ($data['rank'] == 1) { ?> checked="checked" <?php } ?>/><label for="rank1">主催</label><br>
             <input name="rank" type="radio" id="rank2" value="2" <?php if ($data['rank'] == 2) { ?> checked="checked" <?php } ?>/><label for="rank2">副主催</label><br>
-            <input name="rank" type="radio" id="rank3" value="3" <?php if ($data['rank'] == 3) { ?> checked="checked" <?php } ?>/><label for="rank3">その他</label>
+            <input name="rank" type="radio" id="rank3" value="3" <?php if ($data['rank'] == 3) { ?> checked="checked" <?php } ?>/><label for="rank3">なし</label>
           </td>
 
           <td align="center">

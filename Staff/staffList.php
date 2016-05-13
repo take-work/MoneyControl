@@ -78,7 +78,7 @@
                 echo "副主催";
                 break;
               case '3':
-                echo "その他";
+                echo "なし";
                 break;
             }
           ?>

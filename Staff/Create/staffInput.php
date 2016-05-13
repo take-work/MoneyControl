@@ -49,7 +49,7 @@
        	    <td align="center">
 		          <input name="rank" type="radio" id="rank1" value="1" /><label for="rank1">主催</label><br>
               <input name="rank" type="radio" id="rank2" value="2" /><label for="rank2">副主催</label><br>
-              <input name="rank" type="radio" id="rank3" value="3" /><label for="rank3">その他</label>
+              <input name="rank" type="radio" id="rank3" value="3" /><label for="rank3">なし</label>
 		        </td>
 
             <td align="center">
