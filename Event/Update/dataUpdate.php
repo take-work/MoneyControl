@@ -23,11 +23,10 @@
     <tbody>
       <tr>
         <th>イベント名</th>
+        <th>開始日</th>
+        <th>終了日</th>
         <th>主催者</th>
-        <th>開始年月日</th>
-        <th>終了年月日</th>
         <th>準備費用</th>
-        <th>スタッフ数</th>
         <th>データの変更</th>
       </tr>
   <?php
@@ -53,10 +52,6 @@
 
           <td align="center">
             <input name="price" type="text" value="<?=htmlspecialchars($data['price'])?>"/>
-          </td>
-
-          <td align="center">
-            <input name="staff" type="text" value="<?=htmlspecialchars($data['staff'])?>" size="5"/>
           </td>
 
           <td align="center">
