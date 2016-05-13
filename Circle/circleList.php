@@ -24,9 +24,13 @@
   <table width="1200" border="1" cellspacing="1" cellpadding="8">
     <tbody>
       <tr>
+        <th>ナンバー</th>
+        <th>スペース</th>
         <th>サークル名</th>
         <th>代表者</th>
-        <th>売上</th>
+        <th>参加人数</th>
+        <th>机の数</th>
+        <th>椅子の数</th>
         <th>データの編集</th>
         <th>データの削除</th>
       </tr>
@@ -34,6 +38,14 @@
     while ($data = mysqli_fetch_assoc($recordSet)) {
   ?>
       <tr>
+        <td align="center">
+          <?=htmlspecialchars($data['number'])?>
+        </td>
+
+        <td align="center">
+          <?=htmlspecialchars($data['space'])?>
+        </td>
+
         <td align="center">
           <?=htmlspecialchars($data['circle_name'])?>
         </td>
@@ -43,7 +55,15 @@
         </td>
 
         <td align="center">
-          <?=htmlspecialchars($data['proceeds'])?>
+          <?=htmlspecialchars($data['staff'])?>
+        </td>
+
+        <td align="center">
+          <?=htmlspecialchars($data['desk'])?>
+        </td>
+
+        <td align="center">
+          <?=htmlspecialchars($data['chaise'])?>
         </td>
 
         <td align="center">
