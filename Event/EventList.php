@@ -41,6 +41,12 @@
 
       $staffGet = mysqli_query($db, 'SELECT * FROM Staffs Where event_id = '.$data['id']);
       $staffNumber = $staffGet->num_rows;
+
+      if($circleNumber == 0) {
+        $moneyLink = "../Money/Create/moneyInput.php?actin=confirm&id=". $data['id'];
+      } else {
+        $moneyLink = "../Money/Update/dataUpdate.php?actin=confirm&id=". $data['id'];
+      }
   ?>
       <tr>
         <td align="center">
@@ -72,7 +78,7 @@
         </td>
 
         <td align="center">
-          <a href="../Money/Create/moneyInput.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>">\<?php echo $circleNumber; ?></a>
+          <a href="<?php echo $moneyLink; ?>">\<?php echo $circleNumber; ?></a>
         </td>
 
         <td align="center">
