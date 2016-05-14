@@ -71,9 +71,8 @@
           \<?=htmlspecialchars($data['price'])?>
         </td>
 
-
         <td align="center">
-          未作成
+          <a href="../Money/moneyInput.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>">\<?php echo $circleNumber; ?></a>
         </td>
 
         <td align="center">

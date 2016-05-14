@@ -17,36 +17,36 @@
           <th>データの登録</th>
         </tr>
 
-        <form id="formInput" name="formInput" method="post" action="EventComplete.php">
 	      <tr>
-		    <td align="center">
-		      西暦<input name="startYear" type="text" id="startYear" size="8" maxlength="10" />年 &nbsp;
-		      <input name="startMonth" type="text" id="startMonth" size="4" maxlength="4" />月 &nbsp;
-		      <input name="startDay" type="text" id="startDay" size="4" maxlength="4" />日
-		    </td>
-
-		    <td align="center">
-		      西暦<input name="endYear" type="text" id="endYear" size="8" maxlength="10" />年 &nbsp;
-		      <input name="endMonth" type="text" id="endMonth" size="4" maxlength="4" />月 &nbsp;
-		      <input name="endDay" type="text" id="endDay" size="4" maxlength="4" />日
-		    </td>
-
-		    <td align="center">
-		      <input name="eventName" type="text" id="eventName" size="20" maxlength="255" />
-		    </td>
-
- 		    <td align="center">
-		      <input name="host" type="text" id="host" size="20" maxlength="255" />
-		    </td>
-
-		    <td align="center">
-		      <input name="price" type="text" id="price" size="10" maxlength="10" />円
-		    </td>
-
+          <form id="formInput" name="formInput" method="post" action="EventComplete.php">
             <td align="center">
-       	      <input type="submit" value="登録する" />
-       	    </td>
-       	  </tr>
+            西暦<input name="startYear" type="text" id="startYear" size="8" maxlength="10" />年 &nbsp;
+            <input name="startMonth" type="text" id="startMonth" size="4" maxlength="4" />月 &nbsp;
+            <input name="startDay" type="text" id="startDay" size="4" maxlength="4" />日
+		      </td>
+
+          <td align="center">
+            西暦<input name="endYear" type="text" id="endYear" size="8" maxlength="10" />年 &nbsp;
+            <input name="endMonth" type="text" id="endMonth" size="4" maxlength="4" />月 &nbsp;
+            <input name="endDay" type="text" id="endDay" size="4" maxlength="4" />日
+		      </td>
+
+          <td align="center">
+            <input name="eventName" type="text" id="eventName" size="20" maxlength="255" />
+		      </td>
+
+   	      <td align="center">
+            <input name="host" type="text" id="host" size="20" maxlength="255" />
+          </td>
+
+          <td align="center">
+            <input name="price" type="text" id="price" size="10" maxlength="10" />円
+          </td>
+
+          <td align="center">
+         	  <input type="submit" value="登録する" />
+         	</td>
+       	</tr>
 
 	    </form>
 	  </tbody>
