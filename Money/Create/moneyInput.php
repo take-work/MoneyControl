@@ -3,6 +3,18 @@
 	<title>金額管理</title>
 </head>
 <body>
+
+<SCRIPT language="JavaScript">
+<!--
+  function plus(chk){
+    chk.value++;
+  }
+ function minus(chk){
+   chk.value--;
+ }
+ // -->
+ </SCRIPT>
+
   <font size="4">金額管理</font><br><br>
 
   <?php
@@ -18,34 +30,44 @@
   <table width="1300" border="1" cellspacing="1" cellpadding="8">
     <tbody>
       <tr>
-        <th>100円</th>
-        <th>500円</th>
-        <th>1000円</th>
-        <th>5000円</th>
-        <th>10000円</th>
+        <th>100円玉</th>
+        <th>500円玉</th>
+        <th>1000円札</th>
+        <th>5000円札</th>
+        <th>10000円札</th>
         <th>データの編集</th>
       </tr>
 
       <form id="formInput" name="formInput" method="post" action="moneyComplete.php">
         <tr>
           <td align="center">
-            <input name="hundred" type="text" size="8" value="<?=htmlspecialchars($data['hundred'])?>"/>
+            <input type="button" value=" ー " onClick="minus(this.form.hundred)">
+            <input name="hundred" type="text" size="8" value="0"/>
+            <input type="button" value=" ＋ " onClick="plus(this.form.hundred)">
           </td>
 
           <td align="center">
-            <input name="five_hundred" type="text" size="8" value="<?=htmlspecialchars($data['five_hundred'])?>" />
+            <input type="button" value=" ー " onClick="minus(this.form.five_hundred)">
+            <input name="five_hundred" type="text" size="8" value="0" />
+            <input type="button" value=" ＋ " onClick="plus(this.form.five_hundred)">
           </td>
 
           <td align="center">
-            <input name="thousand" type="text" size="8" value="<?=htmlspecialchars($data['thousand'])?>" />
+            <input type="button" value=" ー " onClick="minus(this.form.thousand)">
+            <input name="thousand" type="text" size="8" value="0" />
+            <input type="button" value=" ＋ " onClick="plus(this.form.thousand)">
           </td>
 
           <td align="center">
-            <input name="five_thousand" type="text" size="8" value="<?=htmlspecialchars($data['five_thousand'])?>" />
+            <input type="button" value=" ー " onClick="minus(this.form.five_thousand)">
+            <input name="five_thousand" type="text" size="8" value="0" />
+            <input type="button" value=" ＋ " onClick="plus(this.form.five_thousand)">
           </td>
 
           <td align="center">
-            <input name="million" type="text" size="8" value="<?=htmlspecialchars($data['million'])?>" />
+            <input type="button" value=" ー " onClick="minus(this.form.million)">
+            <input name="million" type="text" size="8" value="0" />
+            <input type="button" value=" ＋ " onClick="plus(this.form.million)">
           </td>
 
           <td align="center">

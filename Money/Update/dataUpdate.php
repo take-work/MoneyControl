@@ -15,7 +15,6 @@
     mysqli_set_charset($db, 'UTF8');
 
     $id = $_GET['id'];
-
     $recordSet = mysqli_query($db, 'SELECT * FROM MoneyControl Where event_id =' . $id);
   ?>
 
