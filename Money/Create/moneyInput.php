@@ -13,9 +13,6 @@
     $db = $MyDB->dbConnect();
 
     mysqli_set_charset($db, 'UTF8');
-
-    $recordSet = mysqli_query($db, 'SELECT * FROM Events');
-    $money = ['100', '500', '1000', '5000', '10000'];
   ?>
 
   <table width="1300" border="1" cellspacing="1" cellpadding="8">
@@ -32,23 +29,23 @@
       <form id="formInput" name="formInput" method="post" action="moneyComplete.php">
         <tr>
           <td align="center">
-            <input name="hundred" type="text" size="8" />
+            <input name="hundred" type="text" size="8" value="<?=htmlspecialchars($data['hundred'])?>"/>
           </td>
 
           <td align="center">
-            <input name="five_hundred" type="text" size="8" />
+            <input name="five_hundred" type="text" size="8" value="<?=htmlspecialchars($data['five_hundred'])?>" />
           </td>
 
           <td align="center">
-            <input name="thousand" type="text" size="8" />
+            <input name="thousand" type="text" size="8" value="<?=htmlspecialchars($data['thousand'])?>" />
           </td>
 
           <td align="center">
-            <input name="five_thousand" type="text" size="8" />
+            <input name="five_thousand" type="text" size="8" value="<?=htmlspecialchars($data['five_thousand'])?>" />
           </td>
 
           <td align="center">
-            <input name="million" type="text" size="8" />
+            <input name="million" type="text" size="8" value="<?=htmlspecialchars($data['million'])?>" />
           </td>
 
           <td align="center">
