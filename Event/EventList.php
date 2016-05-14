@@ -18,7 +18,7 @@
   ?>
 
   <a href="Create/EventInput.php"><input type="submit" value="新しいイベントを作成する"></a><br><br>
-  <table width="1300" border="1" cellspacing="1" cellpadding="8">
+  <table width="1300" border="10" cellspacing="0" cellpadding="8" bordercolor="#ffd700">
     <tbody>
       <tr>
         <th>開始日</th>
@@ -78,7 +78,7 @@
         </td>
 
         <td align="center">
-          <a href="<?php echo $moneyLink; ?>">\<?php echo $circleNumber; ?></a>
+          <a href="<?php echo $moneyLink; ?>" target="_blank">\<?php echo $circleNumber; ?></a>
         </td>
 
         <td align="center">
