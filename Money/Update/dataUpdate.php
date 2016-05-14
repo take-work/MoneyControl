@@ -34,24 +34,24 @@
   ?>
       <form name="formInput" method="post" action="updateComplete.php?actin=update&id=<?=htmlspecialchars($data['id'])?>">
         <tr>
-          <td>
-            <input name="hundred" type="text" value="<?=htmlspecialchars($data['hundred'])?>"/>
+          <td align="center">
+            <input name="hundred" type="text" size="8" value="<?=htmlspecialchars($data['hundred'])?>"/>
           </td>
 
-          <td>
-            <input name="five_hundred" type="text" value="<?=htmlspecialchars($data['five_hundred'])?>"/>
+          <td align="center">
+            <input name="five_hundred" type="text" size="8" value="<?=htmlspecialchars($data['five_hundred'])?>"/>
           </td>
 
-          <td>
-            <input name="thousand" type="text" value="<?=htmlspecialchars($data['thousand'])?>"/>
+          <td align="center">
+            <input name="thousand" type="text" size="8" value="<?=htmlspecialchars($data['thousand'])?>"/>
           </td>
 
-          <td>
-            <input name="five_thousand" type="text" value="<?=htmlspecialchars($data['five_thousand'])?>"/>
+          <td align="center">
+            <input name="five_thousand" type="text" size="8" value="<?=htmlspecialchars($data['five_thousand'])?>"/>
           </td>
 
-          <td>
-            <input name="million" type="text" value="<?=htmlspecialchars($data['million'])?>"/>
+          <td align="center">
+            <input name="million" type="text" size="8" value="<?=htmlspecialchars($data['million'])?>"/>
           </td>
 
           <td align="center">
