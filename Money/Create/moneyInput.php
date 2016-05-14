@@ -79,5 +79,8 @@
     </tbody>
   </table>
 
+  <br>
+  <a href="#" onClick="window.close(); return false;">イベント一覧に戻る</a><br>
+
 </body>
 </html>
