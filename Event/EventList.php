@@ -72,7 +72,7 @@
         </td>
 
         <td align="center">
-          <a href="../Money/moneyInput.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>">\<?php echo $circleNumber; ?></a>
+          <a href="../Money/Create/moneyInput.php?actin=confirm&id=<?=htmlspecialchars($data['id'])?>">\<?php echo $circleNumber; ?></a>
         </td>
 
         <td align="center">
