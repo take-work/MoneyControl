@@ -44,14 +44,14 @@
       $staffGet = mysqli_query($db, 'SELECT * FROM Staffs Where event_id = '.$data['id']);
       $staffNumber = $staffGet->num_rows;
 
-      if($data['profit'] == 0) {
+      $money = $calc->calculation($data['id']);
+      $profit = $calc->profits($money,$data['price']);
+
+      if($money == 0) {
         $moneyLink = "../Money/Create/moneyInput.php?actin=confirm&id=". $data['id'];
       } else {
         $moneyLink = "../Money/Update/dataUpdate.php?actin=confirm&id=". $data['id'];
       }
-
-      $money = $calc->calculation($data['id']);
-      $profit = $calc->profits($money,$data['price']);
 
       $commaPrice = number_format($data['price']);
       $commaMoney = number_format($money);
