@@ -52,6 +52,10 @@
 
       $money = $calc->calculation($data['id']);
       $profit = $calc->profits($money,$data['price']);
+
+      $commaPrice = number_format($data['price']);
+      $commaMoney = number_format($money);
+      $commaProfit = number_format($profit);
   ?>
       <tr>
         <td align="center">
@@ -79,21 +83,21 @@
         </td>
 
         <td align="center">
-          \<?=htmlspecialchars($data['price'])?>
+          \<?php echo $commaPrice; ?>
         </td>
 
         <td align="center">
-          <a href="<?php echo $moneyLink; ?>" target="_blank">\<?php echo $money; ?></a>
+          <a href="<?php echo $moneyLink; ?>" target="_blank">\<?php echo $commaMoney; ?></a>
         </td>
 
         <td align="center">
           <?php
             if ($profit < 0) {
-              echo '<font color="red"><b>\\'. $profit .'</b></font>';
+              echo '<font color="red"><b>\\'. $commaProfit .'</b></font>';
             } elseif($profit > 0) {
-              echo '<b>\\'. $profit .'</b>';
+              echo '<b>\\'. $commaProfit .'</b>';
             } elseif($profit == 0) {
-              echo '<font color="#1f90ff"><b>\\'. $profit .'</b></font>';
+              echo '<font color="#1f90ff"><b>\\'. $commaProfit .'</b></font>';
             }
           ?>
         </td>
