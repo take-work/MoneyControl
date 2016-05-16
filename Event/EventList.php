@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>イベント一覧</title>
+  <title>イベント一覧</title>
 </head>
 <body>
   <font size="4">イベント一覧</font><br><br>
