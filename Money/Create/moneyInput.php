@@ -27,52 +27,57 @@
     mysqli_set_charset($db, 'UTF8');
   ?>
 
-  <table width="1300" border="1" cellspacing="1" cellpadding="8">
+  <table border="10" cellspacing="0" cellpadding="8" bordercolor="#ffd700">
     <tbody>
-      <tr>
-        <th>100円玉</th>
-        <th>500円玉</th>
-        <th>1000円札</th>
-        <th>5000円札</th>
-        <th>10000円札</th>
-        <th>データの編集</th>
-      </tr>
-
       <form id="formInput" name="formInput" method="post" action="moneyComplete.php">
         <tr>
+          <th width="120" height="70">100円玉</th>
+          <td align="center" width="300">
+            <input type="button" value=" ー " onClick="minus(this.form.hundred)" style="width:60px; height:40px">
+            <input name="hundred" type="text" size="8" value="0"  style="width:60px; height:40px" />
+            <input type="button" value=" ＋ " onClick="plus(this.form.hundred)" style="width:60px; height:40px">
+          </td>
+          <th width="250">データの編集</th>
+        </tr>
+
+        <tr>
+          <th height="70">500円玉</th>
           <td align="center">
-            <input type="button" value=" ー " onClick="minus(this.form.hundred)">
-            <input name="hundred" type="text" size="8" value="0"/>
-            <input type="button" value=" ＋ " onClick="plus(this.form.hundred)">
+            <input type="button" value=" ー " onClick="minus(this.form.five_hundred)" style="width:60px; height:40px">
+            <input name="five_hundred" type="text" size="8" value="0" style="width:60px; height:40px" />
+            <input type="button" value=" ＋ " onClick="plus(this.form.five_hundred)" style="width:60px; height:40px">
           </td>
 
-          <td align="center">
-            <input type="button" value=" ー " onClick="minus(this.form.five_hundred)">
-            <input name="five_hundred" type="text" size="8" value="0" />
-            <input type="button" value=" ＋ " onClick="plus(this.form.five_hundred)">
-          </td>
-
-          <td align="center">
-            <input type="button" value=" ー " onClick="minus(this.form.thousand)">
-            <input name="thousand" type="text" size="8" value="0" />
-            <input type="button" value=" ＋ " onClick="plus(this.form.thousand)">
-          </td>
-
-          <td align="center">
-            <input type="button" value=" ー " onClick="minus(this.form.five_thousand)">
-            <input name="five_thousand" type="text" size="8" value="0" />
-            <input type="button" value=" ＋ " onClick="plus(this.form.five_thousand)">
-          </td>
-
-          <td align="center">
-            <input type="button" value=" ー " onClick="minus(this.form.million)">
-            <input name="million" type="text" size="8" value="0" />
-            <input type="button" value=" ＋ " onClick="plus(this.form.million)">
-          </td>
-
-          <td align="center">
+          <td align="center" rowspan="4">
             <input type="hidden" name="id" value="<?=htmlspecialchars($_GET['id'])?>"></input>
-            <input type="submit" value="登録する" />
+            <input type="submit" value="登録する" style="width:100px; height:50px" />
+          </td>
+        </tr>
+
+        <tr>
+          <th height="70">1000円札</th>
+          <td align="center">
+            <input type="button" value=" ー " onClick="minus(this.form.thousand)" style="width:60px; height:40px">
+            <input name="thousand" type="text" size="8" value="0" style="width:60px; height:40px" />
+            <input type="button" value=" ＋ " onClick="plus(this.form.thousand)" style="width:60px; height:40px">
+          </td>
+        </tr>
+
+        <tr>
+          <th height="70">5000円札</th>
+          <td align="center">
+            <input type="button" value=" ー " onClick="minus(this.form.five_thousand)" style="width:60px; height:40px">
+            <input name="five_thousand" type="text" size="8" value="0" style="width:60px; height:40px" />
+            <input type="button" value=" ＋ " onClick="plus(this.form.five_thousand)" style="width:60px; height:40px">
+          </td>
+        </tr>
+
+        <tr>
+          <th height="70">10000円札</th>
+          <td align="center">
+            <input type="button" value=" ー " onClick="minus(this.form.million)" style="width:60px; height:40px">
+            <input name="million" type="text" size="8" value="0" style="width:60px; height:40px" />
+            <input type="button" value=" ＋ " onClick="plus(this.form.million)" style="width:60px; height:40px">
           </td>
         </tr>
       </form>
