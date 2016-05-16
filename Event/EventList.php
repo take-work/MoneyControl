@@ -44,7 +44,7 @@
       $staffGet = mysqli_query($db, 'SELECT * FROM Staffs Where event_id = '.$data['id']);
       $staffNumber = $staffGet->num_rows;
 
-      if($circleNumber == 0) {
+      if($data['price'] == 0) {
         $moneyLink = "../Money/Create/moneyInput.php?actin=confirm&id=". $data['id'];
       } else {
         $moneyLink = "../Money/Update/dataUpdate.php?actin=confirm&id=". $data['id'];
