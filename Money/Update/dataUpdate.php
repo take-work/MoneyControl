@@ -66,7 +66,7 @@
   </table>
 
   <br>
-  <a href="../../Event/EventList.php">イベント一覧に戻る</a>
+  <a href="#" onClick="window.close(); return false;">イベント一覧に戻る</a>
 
 </body>
 </html>
