@@ -6,13 +6,15 @@
   <font size="4">イベント一覧</font><br><br>
 
   <?php
+    mysqli_set_charset($db, 'UTF8');
     header("Content-Type: text/html; charset=UTF-8");
     require_once(dirname(__FILE__).'../../database.php');
+    require_once(dirname(__FILE__).'../../Money/moneyCalc.php');
 
     $MyDB = new MyDB;
     $db = $MyDB->dbConnect();
 
-    mysqli_set_charset($db, 'UTF8');
+    $calc = new moneyCalc;
 
     $recordSet = mysqli_query($db, 'SELECT * FROM Events');
   ?>
@@ -47,6 +49,8 @@
       } else {
         $moneyLink = "../Money/Update/dataUpdate.php?actin=confirm&id=". $data['id'];
       }
+
+      $money = $calc->calculation($data['id']);
   ?>
       <tr>
         <td align="center">
@@ -78,7 +82,7 @@
         </td>
 
         <td align="center">
-          <a href="<?php echo $moneyLink; ?>" target="_blank">\<?php echo $circleNumber; ?></a>
+          <a href="<?php echo $moneyLink; ?>" target="_blank">\<?php echo $money; ?></a>
         </td>
 
         <td align="center">
