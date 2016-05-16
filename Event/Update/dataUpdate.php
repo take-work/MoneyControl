@@ -38,16 +38,16 @@
             <input name="eventName" type="text" value="<?=htmlspecialchars($data['event_name'])?>"/>
           </td>
 
-          <td>
-            <input name="host" type="text" value="<?=htmlspecialchars($data['host'])?>"/>
-          </td>
-
           <td align="center">
             <input name="startDay" type="text" value="<?=htmlspecialchars($data['start_day'])?>"/>
           </td>
 
           <td align="center">
             <input name="endDay" type="text" value="<?=htmlspecialchars($data['end_day'])?>"/>
+          </td>
+
+          <td align="center">
+            <input name="host" type="text" value="<?=htmlspecialchars($data['host'])?>"/>
           </td>
 
           <td align="center">
