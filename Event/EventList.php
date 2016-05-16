@@ -51,6 +51,7 @@
       }
 
       $money = $calc->calculation($data['id']);
+      $profit = $calc->profits($money,$data['price']);
   ?>
       <tr>
         <td align="center">
@@ -86,7 +87,15 @@
         </td>
 
         <td align="center">
-          未作成
+          <?php
+            if ($profit < 0) {
+              echo '<font color="red"><b>\\'. $profit .'</b></font>';
+            } elseif($profit > 0) {
+              echo '<b>\\'. $profit .'</b>';
+            } elseif($profit == 0) {
+              echo '<font color="#1f90ff"><b>\\'. $profit .'</b></font>';
+            }
+          ?>
         </td>
 
         <td align="center">

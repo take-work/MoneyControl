@@ -23,4 +23,9 @@ class moneyCalc
     return $money;
   }
 
+  public function profits($‎proceeds,$price) {
+    $profit = $‎proceeds - $price;
+    return $profit;
+  }
+
 }
