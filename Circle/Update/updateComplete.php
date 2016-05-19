@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>イベントデータ更新完了画面</title>
+	<title>サークルデータ更新完了画面</title>
 </head>
 <body>
 
